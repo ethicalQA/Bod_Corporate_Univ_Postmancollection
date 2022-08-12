@@ -1,0 +1,4121 @@
+{
+	"info": {
+		"_postman_id": "0e2fa2a9-1f83-46ac-b698-8d3d6a0b01fc",
+		"name": "BodAdmin Corporate Universe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12309329"
+	},
+	"item": [
+		{
+			"name": "Corporate Affairs",
+			"item": [
+				{
+					"name": "Incorporation List Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/Incorporation/List",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Incorporation",
+								"List"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Incorporation/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Incorporation",
+										"List"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "1435"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 11:14:17 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"2572f1de-b189-47bf-ace9-16aefdb4cbe0\",\n            \"title\": \"sadda\",\n            \"incorporationDate\": null,\n            \"entryStatus\": \"Draft\",\n            \"reminder\": true\n        },\n        {\n            \"id\": \"282c86bd-2397-4e22-b956-de7eea23612a\",\n            \"title\": \"sfdsdf\",\n            \"incorporationDate\": null,\n            \"entryStatus\": \"AwaitingApproval\",\n            \"reminder\": true\n        },\n        {\n            \"id\": \"2a406c08-32e5-4598-809a-dbe161ec291c\",\n            \"title\": \"bodadmin\",\n            \"incorporationDate\": null,\n            \"entryStatus\": \"Draft\",\n            \"reminder\": true\n        },\n        {\n            \"id\": \"70f7964d-8e9f-4dbb-8b05-37d307af8b48\",\n            \"title\": \"Proof Title\",\n            \"incorporationDate\": null,\n            \"entryStatus\": \"AwaitingApproval\",\n            \"reminder\": true\n        },\n        {\n            \"id\": \"9daeadce-0620-4c30-ba60-a8fe45c05027\",\n            \"title\": \"december 2021\",\n            \"incorporationDate\": null,\n            \"entryStatus\": \"Draft\",\n            \"reminder\": true\n        },\n        {\n            \"id\": \"a134c7b8-57b0-419b-a7fc-bda79e0ebd58\",\n            \"title\": \"gideon dev\",\n            \"incorporationDate\": null,\n            \"entryStatus\": \"Draft\",\n            \"reminder\": true\n        },\n        {\n            \"id\": \"a272d94f-ab9c-4f9e-a1f7-ffd7ff0993b9\",\n            \"title\": \"New Proof\",\n            \"incorporationDate\": null,\n            \"entryStatus\": \"Draft\",\n            \"reminder\": true\n        },\n        {\n            \"id\": \"a4c45521-a844-4910-8080-bc6586130a43\",\n            \"title\": \"czxz\",\n            \"incorporationDate\": null,\n            \"entryStatus\": \"Draft\",\n            \"reminder\": true\n        },\n        {\n            \"id\": \"c7d0aa9b-3fb9-4566-87f1-5dd46cd635bb\",\n            \"title\": \"This is the title\",\n            \"incorporationDate\": null,\n            \"entryStatus\": \"AwaitingApproval\",\n            \"reminder\": true\n        },\n        {\n            \"id\": \"e12095a8-092d-4e5b-b1d0-2584bcc9fd84\",\n            \"title\": \"Bod title\",\n            \"incorporationDate\": null,\n            \"entryStatus\": \"Draft\",\n            \"reminder\": true\n        }\n    ],\n    \"pageSize\": 50,\n    \"pageNumber\": 1,\n    \"totalRecords\": 10,\n    \"isSuccessful\": true,\n    \"statusCode\": null,\n    \"message\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Incorporation Attachments Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"identity\": {\r\n            \"fileId\": \"asvgvdyusf7rbrjf\",\r\n            \"versionNumber\": 0,\r\n            \"fileName\": \"TestFile_Nama\",\r\n            \"fileSize\": \"70.00kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        },\r\n        \"highlight\": \"Document highlight\",\r\n        \"source\": \"Document Source\",\r\n        \"hasExpiryDate\": true,\r\n        \"referenceDate\": \"2020-10-10\",\r\n        \"validFrom\": \"2020-10-15\",\r\n        \"validTo\": \"2021-10-10\",\r\n        \"otherDetails\": \"These are other details\",\r\n        \"documentStatus\": \"Valid\",\r\n        \"reference\": \"Reporting\",\r\n        \"referenceDescription\": \"Description\",\r\n        \"statusDescription\": \"Status description\"\r\n    },\r\n    {\r\n        \"identity\": null,\r\n        \"highlight\": \"Document highlight\",\r\n        \"source\": \"Document Source\",\r\n        \"hasExpiryDate\": true,\r\n        \"referenceDate\": \"2020-10-10\",\r\n        \"validFrom\": \"2020-10-15\",\r\n        \"validTo\": \"2021-10-10\",\r\n        \"otherDetails\": \"These are other details\",\r\n        \"documentStatus\": \"Valid\",\r\n        \"reference\": \"Reporting\",\r\n        \"referenceDescription\": \"Description\",\r\n        \"statusDescription\": \"Status description\"\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/Incorporation/e12095a8-092d-4e5b-b1d0-2584bcc9fd84/Attachments/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Incorporation",
+								"e12095a8-092d-4e5b-b1d0-2584bcc9fd84",
+								"Attachments",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incorporation Attachments Details Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/Incorporation/e12095a8-092d-4e5b-b1d0-2584bcc9fd84/Attachments",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Incorporation",
+								"e12095a8-092d-4e5b-b1d0-2584bcc9fd84",
+								"Attachments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Incorporation/e12095a8-092d-4e5b-b1d0-2584bcc9fd84/Attachments",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Incorporation",
+										"e12095a8-092d-4e5b-b1d0-2584bcc9fd84",
+										"Attachments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "557"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 11:56:48 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": [\n        {\n            \"highlight\": \"Document highlight\",\n            \"source\": \"Document Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"Valid\",\n            \"reference\": \"Reporting\",\n            \"referenceDescription\": \"Description\",\n            \"statusDescription\": \"Status description\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Incorporation Attachments Update Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Incorporation/e12095a8-092d-4e5b-b1d0-2584bcc9fd84/Attachments/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Incorporation",
+										"e12095a8-092d-4e5b-b1d0-2584bcc9fd84",
+										"Attachments",
+										"Update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "557"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 11:57:44 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": [\n        {\n            \"highlight\": \"Document highlight\",\n            \"source\": \"Document Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"Valid\",\n            \"reference\": \"Reporting\",\n            \"referenceDescription\": \"Description\",\n            \"statusDescription\": \"Status description\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Location List Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/location/List",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"location",
+								"List"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/location/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"location",
+										"List"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "442"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 13:09:53 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"a7aa36da-0822-4d75-a01c-555ee26e82a3\",\n            \"headAddress\": \"Lagos\",\n            \"corporateAddress\": \"Lagos\",\n            \"agentName\": null,\n            \"dateCreated\": \"2021-12-16T04:37:04.0405167\"\n        },\n        {\n            \"id\": \"cc60b78c-34ba-4e87-bd62-099841eb2578\",\n            \"headAddress\": \"Address 1\",\n            \"corporateAddress\": \"Ibeju Lekki\",\n            \"agentName\": \"Segun Iluyemi\",\n            \"dateCreated\": \"2021-12-30T14:09:24.9116036\"\n        }\n    ],\n    \"pageSize\": 50,\n    \"pageNumber\": 1,\n    \"totalRecords\": 2,\n    \"isSuccessful\": true,\n    \"statusCode\": null,\n    \"message\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Location Profile Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"headAddress\": \"Address 1\",\r\n    \"corporateAddress\": \"Ibeju Lekki\",\r\n    \"principalAddress\": \"Principal address 1\",\r\n    \"propertyDescription\": \"Property 1\",\r\n    \"occupiedFrom\": \"2020-10-10T00:00:00\",\r\n    \"leaseStartDate\": \"2020-10-10T00:00:00\",\r\n    \"leaseEndDate\": \"2020-10-10T00:00:00\",\r\n    \"primaryActivity\": \"Buying and Selling\",\r\n    \"dateOccupied\": \"2020-10-10T00:00:00\",\r\n    \"isCompanyOwned\": false,\r\n    \"landLord\": {\r\n        \"firstName\": \"Gideon\",\r\n        \"lastName\": \"peters\",\r\n        \"emailAddress\": \"NoReply@mailinator.com\",\r\n        \"phoneNumber\": \"09031722598\"\r\n    },\r\n    \"agent\": {\r\n        \"firstName\": \"Segun\",\r\n        \"lastName\": \"Iluyemi\",\r\n        \"phoneNumber\": \"08160665432\",\r\n        \"emailAddress\": \"noreply2@mailinator.com\"\r\n    },\r\n    \"contacts\": [\r\n        {\r\n            \"firstName\": \"Adekunle\",\r\n            \"lastName\": \"Emmanuel\",\r\n            \"emailAddress\": \"noreplay3@bodadmin.com\",\r\n            \"phoneNumber\": \"08160665432\",\r\n            \"position\": \"Secretary\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{Root}}/location/Profile/Create",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"location",
+								"Profile",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Location Profile Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"headAddress\": \"Address 1\",\r\n    \"corporateAddress\": \"Ibeju Lekki\",\r\n    \"principalAddress\": \"Principal address 1\",\r\n    \"propertyDescription\": \"Property 1\",\r\n    \"occupiedFrom\": \"2020-10-10T00:00:00\",\r\n    \"leaseStartDate\": \"2020-10-10T00:00:00\",\r\n    \"leaseEndDate\": \"2020-10-10T00:00:00\",\r\n    \"primaryActivity\": \"Buying and Selling\",\r\n    \"dateOccupied\": \"2020-10-10T00:00:00\",\r\n    \"isCompanyOwned\": false,\r\n    \"landLord\": {\r\n        \"firstName\": \"Gideon\",\r\n        \"lastName\": \"peters\",\r\n        \"emailAddress\": \"NoReply@mailinator.com\",\r\n        \"phoneNumber\": \"09031722598\"\r\n    },\r\n    \"agent\": {\r\n        \"firstName\": \"Segun\",\r\n        \"lastName\": \"Iluyemi\",\r\n        \"phoneNumber\": \"08160665432\",\r\n        \"emailAddress\": \"noreply2@mailinator.com\"\r\n    },\r\n    \"contacts\": [\r\n        {\r\n            \"firstName\": \"Adekunle\",\r\n            \"lastName\": \"Emmanuel\",\r\n            \"emailAddress\": \"noreplay3@bodadmin.com\",\r\n            \"phoneNumber\": \"08160665432\",\r\n            \"position\": \"Secretary\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{Root}}/location/ba7848ed-fd6a-46f5-859f-c3d688245ae2/Profile/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"location",
+								"ba7848ed-fd6a-46f5-859f-c3d688245ae2",
+								"Profile",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Location Profile Details Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"headAddress\": \"Address 1\",\r\n    \"corporateAddress\": \"Ibeju Lekki\",\r\n    \"principalAddress\": \"Principal address 1\",\r\n    \"propertyDescription\": \"Property 1\",\r\n    \"occupiedFrom\": \"2020-10-10T00:00:00\",\r\n    \"leasedStartDate\": \"2020-10-10T00:00:00\",\r\n    \"leaseEndDate\": \"2020-10-10T00:00:00\",\r\n    \"primaryActivity\": \"Buying and Selling\",\r\n    \"dateOccupied\": \"2020-10-10T00:00:00\",\r\n    \"isCompanyOwned\": false,\r\n    \"landLord\": {\r\n        \"firstName\": \"Gideon\",\r\n        \"lastName\": \"peters\",\r\n        \"emailAddress\": \"NoReply@mailinator.com\",\r\n        \"phoneNumber\": \"09031722598\"\r\n    },\r\n    \"agent\": {\r\n        \"firstName\": \"Segun\",\r\n        \"lastName\": \"Iluyemi\",\r\n        \"phoneNumber\": \"08160665432\",\r\n        \"emailAddress\": \"noreply2@mailinator.com\"\r\n    },\r\n    \"contacts\": [\r\n        {\r\n            \"firstName\": null,\r\n            \"lastName\": null,\r\n            \"emailAddress\": null,\r\n            \"phoneNumber\": null,\r\n            \"position\": null\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{Root}}/location/cc60b78c-34ba-4e87-bd62-099841eb2578/Profile",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"location",
+								"cc60b78c-34ba-4e87-bd62-099841eb2578",
+								"Profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Root}}/location/ba7848ed-fd6a-46f5-859f-c3d688245ae2/Profile",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"location",
+										"ba7848ed-fd6a-46f5-859f-c3d688245ae2",
+										"Profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "874"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 13:20:32 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": null,\n    \"isSuccessful\": true,\n    \"message\": null,\n    \"data\": {\n        \"dateCreated\": \"2021-12-30T14:17:11.8387341\",\n        \"dateModified\": null,\n        \"id\": \"ba7848ed-fd6a-46f5-859f-c3d688245ae2\",\n        \"headAddress\": \"Address 1\",\n        \"corporateAddress\": \"Ibeju Lekki\",\n        \"principalAddress\": \"Principal address 1\",\n        \"propertyDescription\": \"Property 1\",\n        \"leaseStartDate\": \"2020-10-10T00:00:00\",\n        \"leaseEndDate\": \"2020-10-10T00:00:00\",\n        \"primaryActivity\": \"Buying and Selling\",\n        \"dateOccupied\": \"2020-10-10T00:00:00\",\n        \"isCompanyOwned\": false,\n        \"landLord\": {\n            \"firstName\": \"Gideon\",\n            \"lastName\": \"peters\",\n            \"emailAddress\": \"NoReply@mailinator.com\",\n            \"phoneNumber\": \"09031722598\"\n        },\n        \"agent\": {\n            \"firstName\": \"Segun\",\n            \"lastName\": \"Iluyemi\",\n            \"phoneNumber\": \"08160665432\",\n            \"emailAddress\": \"noreply2@mailinator.com\"\n        },\n        \"contacts\": [\n            {\n                \"firstName\": \"Adekunle\",\n                \"lastName\": \"Emmanuel\",\n                \"emailAddress\": \"noreplay3@bodadmin.com\",\n                \"phoneNumber\": \"08160665432\",\n                \"position\": \"Secretary\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Location Attachments Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"identity\": {\r\n            \"fileId\": \"asvgvdyusf7rbrjf\",\r\n            \"versionNumber\": 0,\r\n            \"fileName\": \"TestFile_Nama\",\r\n            \"fileSize\": \"70.00kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        },\r\n        \"highlight\": \"Document highlight\",\r\n        \"source\": \"Document Source\",\r\n        \"hasExpiryDate\": true,\r\n        \"referenceDate\": \"2020-10-10\",\r\n        \"validFrom\": \"2020-10-15\",\r\n        \"validTo\": \"2021-10-10\",\r\n        \"otherDetails\": \"These are other details\",\r\n        \"documentStatus\": \"Valid\",\r\n        \"reference\": \"Reporting\",\r\n        \"referenceDescription\": \"Description\",\r\n        \"statusDescription\": \"Status description\"\r\n    },\r\n        {\r\n        \"identity\": {\r\n            \"fileId\": \"asvgvdyusf7rbrjf\",\r\n            \"versionNumber\": 0,\r\n            \"fileName\": \"TestFile_Nama\",\r\n            \"fileSize\": \"70.00kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        },\r\n        \"highlight\": \"Document L1 highlight\",\r\n        \"source\": \"Document L1 Source\",\r\n        \"hasExpiryDate\": true,\r\n        \"referenceDate\": \"2020-10-10\",\r\n        \"validFrom\": \"2020-10-15\",\r\n        \"validTo\": \"2021-10-10\",\r\n        \"otherDetails\": \"These are other L1 details\",\r\n        \"documentStatus\": \"Valid\",\r\n        \"reference\": \"L1 Reporting\",\r\n        \"referenceDescription\": \"L1 Description\",\r\n        \"statusDescription\": \"L1 Status description\"\r\n    },\r\n        {\r\n        \"identity\": {\r\n            \"fileId\": \"asvgvdyusf7rbrjf\",\r\n            \"versionNumber\": 0,\r\n            \"fileName\": \"TestFile_Nama\",\r\n            \"fileSize\": \"70.00kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        },\r\n        \"highlight\": \"Document L2 highlight\",\r\n        \"source\": \"Document L2 Source\",\r\n        \"hasExpiryDate\": true,\r\n        \"referenceDate\": \"2020-10-10\",\r\n        \"validFrom\": \"2020-10-15\",\r\n        \"validTo\": \"2021-10-10\",\r\n        \"otherDetails\": \"These are other L2 details\",\r\n        \"documentStatus\": \"L2 Valid\",\r\n        \"reference\": \"L2 Reporting\",\r\n        \"referenceDescription\": \"L2 Description\",\r\n        \"statusDescription\": \"L2 Status description\"\r\n    }\r\n\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/Location/a7aa36da-0822-4d75-a01c-555ee26e82a3/Attachments/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Location",
+								"a7aa36da-0822-4d75-a01c-555ee26e82a3",
+								"Attachments",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Location Attachment Details Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/Location/a7aa36da-0822-4d75-a01c-555ee26e82a3/Attachments",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Location",
+								"a7aa36da-0822-4d75-a01c-555ee26e82a3",
+								"Attachments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Location/a7aa36da-0822-4d75-a01c-555ee26e82a3/Attachments",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Location",
+										"a7aa36da-0822-4d75-a01c-555ee26e82a3",
+										"Attachments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "1560"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 12:23:53 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": null,\n    \"isSuccessful\": true,\n    \"message\": null,\n    \"data\": [\n        {\n            \"highlight\": \"Document L2 highlight\",\n            \"source\": \"Document L2 Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other L2 details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"L2 Valid\",\n            \"reference\": \"L2 Reporting\",\n            \"referenceDescription\": \"L2 Description\",\n            \"statusDescription\": \"L2 Status description\"\n        },\n        {\n            \"highlight\": \"Document L1 highlight\",\n            \"source\": \"Document L1 Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other L1 details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"Valid\",\n            \"reference\": \"L1 Reporting\",\n            \"referenceDescription\": \"L1 Description\",\n            \"statusDescription\": \"L1 Status description\"\n        },\n        {\n            \"highlight\": \"Document highlight\",\n            \"source\": \"Document Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"Valid\",\n            \"reference\": \"Reporting\",\n            \"referenceDescription\": \"Description\",\n            \"statusDescription\": \"Status description\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Location Attachment Update Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/Location/a7aa36da-0822-4d75-a01c-555ee26e82a3/Attachments/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Location",
+								"a7aa36da-0822-4d75-a01c-555ee26e82a3",
+								"Attachments",
+								"Update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Location/a7aa36da-0822-4d75-a01c-555ee26e82a3/Attachments/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Location",
+										"a7aa36da-0822-4d75-a01c-555ee26e82a3",
+										"Attachments",
+										"Update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "1560"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 12:25:24 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": null,\n    \"isSuccessful\": true,\n    \"message\": null,\n    \"data\": [\n        {\n            \"highlight\": \"Document L2 highlight\",\n            \"source\": \"Document L2 Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other L2 details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"L2 Valid\",\n            \"reference\": \"L2 Reporting\",\n            \"referenceDescription\": \"L2 Description\",\n            \"statusDescription\": \"L2 Status description\"\n        },\n        {\n            \"highlight\": \"Document L1 highlight\",\n            \"source\": \"Document L1 Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other L1 details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"Valid\",\n            \"reference\": \"L1 Reporting\",\n            \"referenceDescription\": \"L1 Description\",\n            \"statusDescription\": \"L1 Status description\"\n        },\n        {\n            \"highlight\": \"Document highlight\",\n            \"source\": \"Document Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"Valid\",\n            \"reference\": \"Reporting\",\n            \"referenceDescription\": \"Description\",\n            \"statusDescription\": \"Status description\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Mortgage List Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/Mortgage/List",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Mortgage",
+								"List"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Mortgage/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Mortgage",
+										"List"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "541"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 13:26:57 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"28ab85ec-86f0-44a7-bace-f85eed82f7aa\",\n            \"titleOfDeed\": \"Gideon\",\n            \"shortTitle\": \"Legal Mortgage\",\n            \"solicitorName\": \"Gideon Peters\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"5f0f67ff-0e5a-41c6-bdce-1bb9872415a9\",\n            \"titleOfDeed\": \"string\",\n            \"shortTitle\": \"string\",\n            \"solicitorName\": \"string\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"c95577d3-f74c-4679-a3e0-b83e121d08bb\",\n            \"titleOfDeed\": \"tilt\",\n            \"shortTitle\": \"Charge\",\n            \"solicitorName\": \"sol\",\n            \"entryStatus\": \"Draft\"\n        }\n    ],\n    \"pageSize\": 50,\n    \"pageNumber\": 1,\n    \"totalRecords\": 3,\n    \"isSuccessful\": true,\n    \"statusCode\": \"00\",\n    \"message\": \"Successful\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Mortgage Attachments Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n     {\r\n        \"identity\": {\r\n            \"fileId\": \"asvgvdyusf7rbrjf\",\r\n            \"versionNumber\": 0,\r\n            \"fileName\": \"TestFile_Nama\",\r\n            \"fileSize\": \"70.00kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        },\r\n        \"highlight\": \"Document M1 highlight\",\r\n        \"source\": \"Document M1 Source\",\r\n        \"hasExpiryDate\": true,\r\n        \"referenceDate\": \"2020-10-10\",\r\n        \"validFrom\": \"2020-10-15\",\r\n        \"validTo\": \"2021-10-10\",\r\n        \"otherDetails\": \"These are other details\",\r\n        \"documentStatus\": \"Valid\",\r\n        \"reference\": \"M1 Reporting\",\r\n        \"referenceDescription\": \"M1 Description\",\r\n        \"statusDescription\": \"Status M1 description\"\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/Mortgage/28ab85ec-86f0-44a7-bace-f85eed82f7aa/Attachments/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Mortgage",
+								"28ab85ec-86f0-44a7-bace-f85eed82f7aa",
+								"Attachments",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mortgage Attachments Update Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n     {\r\n        \"identity\": {\r\n            \"fileId\": \"asvgvdyusf7rbrjf\",\r\n            \"versionNumber\": 0,\r\n            \"fileName\": \"TestFile_Nama\",\r\n            \"fileSize\": \"70.00kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        },\r\n        \"highlight\": \"Document M1 highlight\",\r\n        \"source\": \"Document M1 Source\",\r\n        \"hasExpiryDate\": true,\r\n        \"referenceDate\": \"2020-10-10\",\r\n        \"validFrom\": \"2020-10-15\",\r\n        \"validTo\": \"2021-10-10\",\r\n        \"otherDetails\": \"These are other details\",\r\n        \"documentStatus\": \"Valid\",\r\n        \"reference\": \"M1 Reporting\",\r\n        \"referenceDescription\": \"M1 Description\",\r\n        \"statusDescription\": \"Status M1 description\"\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/Mortgage/28ab85ec-86f0-44a7-bace-f85eed82f7aa/Attachments/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Mortgage",
+								"28ab85ec-86f0-44a7-bace-f85eed82f7aa",
+								"Attachments",
+								"Update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Root}}/Mortgage/28ab85ec-86f0-44a7-bace-f85eed82f7aa/Attachments",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Mortgage",
+										"28ab85ec-86f0-44a7-bace-f85eed82f7aa",
+										"Attachments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "564"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 13:52:25 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": null,\n    \"isSuccessful\": true,\n    \"message\": null,\n    \"data\": [\n        {\n            \"highlight\": \"Document M1 highlight\",\n            \"source\": \"Document M1 Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"Valid\",\n            \"reference\": \"M1 Reporting\",\n            \"referenceDescription\": \"M1 Description\",\n            \"statusDescription\": \"Status M1 description\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Mortgage Attachments Details Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n     {\r\n        \"identity\": {\r\n            \"fileId\": \"asvgvdyusf7rbrjf\",\r\n            \"versionNumber\": 0,\r\n            \"fileName\": \"TestFile_Nama\",\r\n            \"fileSize\": \"70.00kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        },\r\n        \"highlight\": \"Document M1 highlight\",\r\n        \"source\": \"Document M1 Source\",\r\n        \"hasExpiryDate\": true,\r\n        \"referenceDate\": \"2020-10-10\",\r\n        \"validFrom\": \"2020-10-15\",\r\n        \"validTo\": \"2021-10-10\",\r\n        \"otherDetails\": \"These are other details\",\r\n        \"documentStatus\": \"Valid\",\r\n        \"reference\": \"M1 Reporting\",\r\n        \"referenceDescription\": \"M1 Description\",\r\n        \"statusDescription\": \"Status M1 description\"\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/Mortgage/28ab85ec-86f0-44a7-bace-f85eed82f7aa/Attachments",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Mortgage",
+								"28ab85ec-86f0-44a7-bace-f85eed82f7aa",
+								"Attachments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Root}}/Mortgage/28ab85ec-86f0-44a7-bace-f85eed82f7aa/Attachments",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Mortgage",
+										"28ab85ec-86f0-44a7-bace-f85eed82f7aa",
+										"Attachments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "564"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 13:53:16 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": null,\n    \"isSuccessful\": true,\n    \"message\": null,\n    \"data\": [\n        {\n            \"highlight\": \"Document M1 highlight\",\n            \"source\": \"Document M1 Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"Valid\",\n            \"reference\": \"M1 Reporting\",\n            \"referenceDescription\": \"M1 Description\",\n            \"statusDescription\": \"Status M1 description\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Asset List Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/Asset/List",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Asset",
+								"List"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Asset/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Asset",
+										"List"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "399"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 13:55:08 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"6007c48a-ce99-4dfd-b24a-67f873858280\",\n            \"title\": \"ho\",\n            \"name\": \"lol\",\n            \"type\": \"Active\",\n            \"location\": \"io\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"7448944c-ab29-4512-86c1-d61e15f69099\",\n            \"title\": \"Legal title\",\n            \"name\": \"This is the asset\",\n            \"type\": \"Active\",\n            \"location\": \"Yeah, this is it\",\n            \"entryStatus\": \"Draft\"\n        }\n    ],\n    \"pageSize\": 50,\n    \"pageNumber\": 1,\n    \"totalRecords\": 2,\n    \"isSuccessful\": false,\n    \"statusCode\": null,\n    \"message\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Asset Attachment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n       \r\n        \"identity\": {\r\n            \"fileId\": \"asvgvdyusf7rbrjf\",\r\n            \"versionNumber\": 0,\r\n            \"fileName\": \"TestFile_Nama\",\r\n            \"fileSize\": \"70.00kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        },\r\n        \"highlight\": \"Document A1 highlight\",\r\n        \"source\": \"Document A1 Source\",\r\n        \"hasExpiryDate\": true,\r\n        \"referenceDate\": \"2020-10-10\",\r\n        \"validFrom\": \"2020-10-15\",\r\n        \"validTo\": \"2021-10-10\",\r\n        \"otherDetails\": \"These are other details\",\r\n        \"documentStatus\": \"Valid\",\r\n        \"reference\": \"A1 Reporting\",\r\n        \"referenceDescription\": \"A1 Description\",\r\n        \"statusDescription\": \"A1 Status description\"\r\n    \r\n}\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/Asset/6007c48a-ce99-4dfd-b24a-67f873858280/Attachments/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Asset",
+								"6007c48a-ce99-4dfd-b24a-67f873858280",
+								"Attachments",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Asset Attachment Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n       \r\n        \"identity\": {\r\n            \"fileId\": \"asvgvdyusf7rbrjf\",\r\n            \"versionNumber\": 0,\r\n            \"fileName\": \"TestFile_Nama\",\r\n            \"fileSize\": \"70.00kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        },\r\n        \"highlight\": \"Document A1 highlight\",\r\n        \"source\": \"Document A1 Source\",\r\n        \"hasExpiryDate\": true,\r\n        \"referenceDate\": \"2020-10-10\",\r\n        \"validFrom\": \"2020-10-15\",\r\n        \"validTo\": \"2021-10-10\",\r\n        \"otherDetails\": \"These are other details\",\r\n        \"documentStatus\": \"Valid\",\r\n        \"reference\": \"A1 Reporting\",\r\n        \"referenceDescription\": \"A1 Description\",\r\n        \"statusDescription\": \"A1 Status description\"\r\n    \r\n}\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/Asset/6007c48a-ce99-4dfd-b24a-67f873858280/Attachments",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Asset",
+								"6007c48a-ce99-4dfd-b24a-67f873858280",
+								"Attachments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Root}}/Asset/6007c48a-ce99-4dfd-b24a-67f873858280/Attachments/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Asset",
+										"6007c48a-ce99-4dfd-b24a-67f873858280",
+										"Attachments",
+										"Update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "564"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 14:03:44 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": null,\n    \"isSuccessful\": true,\n    \"message\": null,\n    \"data\": [\n        {\n            \"highlight\": \"Document A1 highlight\",\n            \"source\": \"Document A1 Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"Valid\",\n            \"reference\": \"A1 Reporting\",\n            \"referenceDescription\": \"A1 Description\",\n            \"statusDescription\": \"A1 Status description\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Asset Attachment Update",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n       \r\n        \"identity\": {\r\n            \"fileId\": \"asvgvdyusf7rbrjf\",\r\n            \"versionNumber\": 0,\r\n            \"fileName\": \"TestFile_Nama\",\r\n            \"fileSize\": \"70.00kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        },\r\n        \"highlight\": \"Document A1 highlight\",\r\n        \"source\": \"Document A1 Source\",\r\n        \"hasExpiryDate\": true,\r\n        \"referenceDate\": \"2020-10-10\",\r\n        \"validFrom\": \"2020-10-15\",\r\n        \"validTo\": \"2021-10-10\",\r\n        \"otherDetails\": \"These are other details\",\r\n        \"documentStatus\": \"Valid\",\r\n        \"reference\": \"A1 Reporting\",\r\n        \"referenceDescription\": \"A1 Description\",\r\n        \"statusDescription\": \"A1 Status description\"\r\n    \r\n}\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/Asset/6007c48a-ce99-4dfd-b24a-67f873858280/Attachments/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Asset",
+								"6007c48a-ce99-4dfd-b24a-67f873858280",
+								"Attachments",
+								"Update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Root}}/Asset/6007c48a-ce99-4dfd-b24a-67f873858280/Attachments/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Asset",
+										"6007c48a-ce99-4dfd-b24a-67f873858280",
+										"Attachments",
+										"Update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "564"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 14:03:44 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": null,\n    \"isSuccessful\": true,\n    \"message\": null,\n    \"data\": [\n        {\n            \"highlight\": \"Document A1 highlight\",\n            \"source\": \"Document A1 Source\",\n            \"hasExpiryDate\": true,\n            \"referenceDate\": \"2020-10-10T00:00:00\",\n            \"validFrom\": \"2020-10-15T00:00:00\",\n            \"validTo\": \"2021-10-10T00:00:00\",\n            \"otherDetails\": \"These are other details\",\n            \"identity\": {\n                \"fileId\": \"asvgvdyusf7rbrjf\",\n                \"versionNumber\": 0,\n                \"fileName\": \"TestFile_Nama\",\n                \"fileSize\": \"70.00kb\",\n                \"fileType\": \"image/JPEG\"\n            },\n            \"documentStatus\": \"Valid\",\n            \"reference\": \"A1 Reporting\",\n            \"referenceDescription\": \"A1 Description\",\n            \"statusDescription\": \"A1 Status description\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Bank Account List Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/BankAccount/List",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"BankAccount",
+								"List"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/BankAccount/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"BankAccount",
+										"List"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "240"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 14:06:46 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"e57fea85-4a5d-429f-8989-db7e9d927163\",\n            \"bankName\": \"LKJHGFDS\",\n            \"accountCurrency\": \"NGN - Nigerian Naira\",\n            \"entryStatus\": \"Draft\"\n        }\n    ],\n    \"pageSize\": 50,\n    \"pageNumber\": 1,\n    \"totalRecords\": 1,\n    \"isSuccessful\": true,\n    \"statusCode\": null,\n    \"message\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Bank Account Signatories Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/BankAccount/e57fea85-4a5d-429f-8989-db7e9d927163/Signatories/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"BankAccount",
+								"e57fea85-4a5d-429f-8989-db7e9d927163",
+								"Signatories",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bank Account Signatories Update Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/BankAccount/e57fea85-4a5d-429f-8989-db7e9d927163/Signatories/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"BankAccount",
+								"e57fea85-4a5d-429f-8989-db7e9d927163",
+								"Signatories",
+								"Update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/BankAccount/e57fea85-4a5d-429f-8989-db7e9d927163/Signatories/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"BankAccount",
+										"e57fea85-4a5d-429f-8989-db7e9d927163",
+										"Signatories",
+										"Update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "329"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 14:27:32 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": null,\n    \"isSuccessful\": true,\n    \"message\": null,\n    \"data\": [\n        {\n            \"firstName\": \"Adekunle\",\n            \"lastName\": \"Folorunso\",\n            \"position\": \"Chairman\",\n            \"signatoryClass\": \"ClassA\",\n            \"signatoryType\": \"Sole\",\n            \"signingLimit\": 0\n        },\n        {\n            \"firstName\": \"Gideon\",\n            \"lastName\": \"Peters\",\n            \"position\": \"CEO\",\n            \"signatoryClass\": \"ClassA\",\n            \"signatoryType\": \"Sole\",\n            \"signingLimit\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Bank Account Signatories Details Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/BankAccount/e57fea85-4a5d-429f-8989-db7e9d927163/Signatories/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"BankAccount",
+								"e57fea85-4a5d-429f-8989-db7e9d927163",
+								"Signatories",
+								"Update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/BankAccount/e57fea85-4a5d-429f-8989-db7e9d927163/Signatories",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"BankAccount",
+										"e57fea85-4a5d-429f-8989-db7e9d927163",
+										"Signatories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "329"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 14:28:34 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": null,\n    \"isSuccessful\": true,\n    \"message\": null,\n    \"data\": [\n        {\n            \"firstName\": \"Adekunle\",\n            \"lastName\": \"Folorunso\",\n            \"position\": \"Chairman\",\n            \"signatoryClass\": \"ClassA\",\n            \"signatoryType\": \"Sole\",\n            \"signingLimit\": 0\n        },\n        {\n            \"firstName\": \"Gideon\",\n            \"lastName\": \"Peters\",\n            \"position\": \"CEO\",\n            \"signatoryClass\": \"ClassA\",\n            \"signatoryType\": \"Sole\",\n            \"signingLimit\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Bank Account Statement Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"startDate\": \"2020-10-10\",\r\n        \"endDate\": \"2021-10-10\",\r\n        \"attachment\": {\r\n            \"fileId\": \"asdvysdjsdkms\",\r\n            \"versionNumber\": 1,\r\n            \"fileName\": \"Test_File\",\r\n            \"fileSize\": \"60kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        }\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/BankAccount/e57fea85-4a5d-429f-8989-db7e9d927163/Statements/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"BankAccount",
+								"e57fea85-4a5d-429f-8989-db7e9d927163",
+								"Statements",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bank Account Statement Update Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"startDate\": \"2020-10-10\",\r\n        \"endDate\": \"2021-10-10\",\r\n        \"attachment\": {\r\n            \"fileId\": \"asdvysdjsdkms\",\r\n            \"versionNumber\": 1,\r\n            \"fileName\": \"Test_File\",\r\n            \"fileSize\": \"60kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        }\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/BankAccount/e57fea85-4a5d-429f-8989-db7e9d927163/Statements/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"BankAccount",
+								"e57fea85-4a5d-429f-8989-db7e9d927163",
+								"Statements",
+								"Update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Root}}/BankAccount/e57fea85-4a5d-429f-8989-db7e9d927163/Statements/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"BankAccount",
+										"e57fea85-4a5d-429f-8989-db7e9d927163",
+										"Statements",
+										"Update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "1218"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 14:39:01 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": null,\n    \"isSuccessful\": true,\n    \"message\": null,\n    \"data\": [\n        {\n            \"startDate\": \"2019-09-09T00:00:00\",\n            \"endDate\": \"2020-09-09T00:00:00\",\n            \"attachment\": {\n                \"fileId\": \"1db76c10-f300-4507-ac5b-98ab83ced24812222021010631AM\",\n                \"versionNumber\": 0,\n                \"fileName\": \"Screenshot 2021-10-19 at 21.49.42.png\",\n                \"fileSize\": \"142.24 KB\",\n                \"fileType\": null\n            }\n        },\n        {\n            \"startDate\": \"2019-09-09T00:00:00\",\n            \"endDate\": \"2020-09-09T00:00:00\",\n            \"attachment\": {\n                \"fileId\": \"43f2f775-5547-49ff-afc2-0ab9ab4567a412302021013345AM\",\n                \"versionNumber\": 0,\n                \"fileName\": \"THIS IS US LIVE CONCERT TICKET.jpeg\",\n                \"fileSize\": \"111.91 KB\",\n                \"fileType\": null\n            }\n        },\n        {\n            \"startDate\": \"2019-09-09T00:00:00\",\n            \"endDate\": \"2020-09-09T00:00:00\",\n            \"attachment\": {\n                \"fileId\": \"2e979424-79f1-4157-a20f-f8c0ae51859e12222021125732AM\",\n                \"versionNumber\": 0,\n                \"fileName\": \"rcf_qr_code.png\",\n                \"fileSize\": \"988.00 B\",\n                \"fileType\": null\n            }\n        },\n        {\n            \"startDate\": \"2020-10-10T00:00:00\",\n            \"endDate\": \"2021-10-10T00:00:00\",\n            \"attachment\": {\n                \"fileId\": \"asdvysdjsdkms\",\n                \"versionNumber\": 0,\n                \"fileName\": \"Test_File\",\n                \"fileSize\": \"60kb\",\n                \"fileType\": null\n            }\n        },\n        {\n            \"startDate\": \"2019-09-09T00:00:00\",\n            \"endDate\": \"2020-09-09T00:00:00\",\n            \"attachment\": {\n                \"fileId\": \"2e979424-79f1-4157-a20f-f8c0ae51859e12222021125732AM\",\n                \"versionNumber\": 0,\n                \"fileName\": \"rcf_qr_code.png\",\n                \"fileSize\": \"988.00 B\",\n                \"fileType\": null\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Bank Account Statement Details Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"startDate\": \"2020-10-10\",\r\n        \"endDate\": \"2021-10-10\",\r\n        \"attachment\": {\r\n            \"fileId\": \"asdvysdjsdkms\",\r\n            \"versionNumber\": 1,\r\n            \"fileName\": \"Test_File\",\r\n            \"fileSize\": \"60kb\",\r\n            \"fileType\": \"image/JPEG\"\r\n        }\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/BankAccount/e57fea85-4a5d-429f-8989-db7e9d927163/Statements",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"BankAccount",
+								"e57fea85-4a5d-429f-8989-db7e9d927163",
+								"Statements"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Reponses",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Root}}/BankAccount/e57fea85-4a5d-429f-8989-db7e9d927163/Statements",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"BankAccount",
+										"e57fea85-4a5d-429f-8989-db7e9d927163",
+										"Statements"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "246"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 14:41:31 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": null,\n    \"isSuccessful\": true,\n    \"message\": null,\n    \"data\": [\n        {\n            \"startDate\": \"2020-10-10T00:00:00\",\n            \"endDate\": \"2021-10-10T00:00:00\",\n            \"attachment\": {\n                \"fileId\": \"asdvysdjsdkms\",\n                \"versionNumber\": 0,\n                \"fileName\": \"Test_File\",\n                \"fileSize\": \"60kb\",\n                \"fileType\": null\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Human Capital",
+			"item": [
+				{
+					"name": "Company Person",
+					"item": [
+						{
+							"name": "Create Person",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"role\": 1,\r\n  \"entryStatus\": 0,\r\n//   \"firstName\": \"Martin\",\r\n  \"lastName\": \"\",\r\n  \"otherNames\": \"Samuel\",\r\n  \"phoneNumber\": \"09071298374\",\r\n  \"dateOfBirth\": \"1999-01-11T22:39:55.200Z\",\r\n  \"email\": \"martinade\",\r\n  \"nationality\": \"Nigerian\",\r\n  \"stateOfOrigin\": \"Osun\",\r\n  \"placeOfBirth\": \"Ilesha\",\r\n  \"religion\": \"Christian\",\r\n  \"occupation\": \"Developer\",\r\n  \"hasFormerAddress\": true,\r\n  \"formerAddress\": \"Lagos\",\r\n  \"gender\": \"male\",\r\n  \"maritalStatus\": \"single\",\r\n  \"imageId\": \"1234\",\r\n  \"imageUrl\": \"test\",\r\n  \"spouseName\": \"glory ade\",\r\n  \"spousePhoneNumber\": \"09023612322\",\r\n  \"spouseBirthday\": \"1999-01-11T22:39:55.200Z\",\r\n  \"currentAddress\": \"Abuja\",\r\n  \"marriageDate\": \"2019-01-11T22:39:55.200Z\",\r\n  \"qualifications\": [\r\n    {\r\n      \"institution\": \"covenant university\",\r\n      \"qualification\": \"bsc\",\r\n      \"yearObtained\": \"2019\",\r\n      \"information\": \"best graduating\"\r\n    },\r\n    {\r\n      \"institution\": \"base university\",\r\n      \"qualification\": \"bsc\",\r\n      \"yearObtained\": \"2014\",\r\n      \"information\": \"best graduating\"\r\n    }\r\n  ],\r\n  \"memberships\": [\r\n    {\r\n      \"name\": \"NBA\",\r\n      \"title\": \"chief\",\r\n      \"yearAdmitted\": \"2017\",\r\n      \"website\": \"https://google.com\"\r\n    },\r\n     {\r\n      \"name\": \"ICAN\",\r\n      \"title\": \"chief\",\r\n      \"yearAdmitted\": \"2019\",\r\n      \"website\": \"https://google.com\"\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/Create",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"Create"
+									]
+								},
+								"description": "This is used to profile company persons"
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Company Person",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/Board/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"Board",
+										"List"
+									]
+								},
+								"description": "This is used to fetch all the company persons (Director, Employee and Guests)"
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Board",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/Board/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"Board",
+										"List"
+									]
+								},
+								"description": "To retrieve all board of directors."
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Executive",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/Executive/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"Executive",
+										"List"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Employee",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/Employee/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"Employee",
+										"List"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Profile",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \"qualifications\": [\r\n            {\r\n                \"institution\": \"covenant university\",\r\n                \"qualification\": \"bsc\",\r\n                \"yearObtained\": \"2019\",\r\n                \"information\": \"best graduating\"\r\n            },\r\n            {\r\n                \"institution\": \"base university\",\r\n                \"qualification\": \"bsc\",\r\n                \"yearObtained\": \"2014\",\r\n                \"information\": \"best graduating\"\r\n            }\r\n        ],\r\n        \"memberships\": [\r\n            {\r\n                \"name\": \"NBA\",\r\n                \"title\": \"chief\",\r\n                \"yearAdmitted\": \"2017\",\r\n                \"website\": \"https://google.com\"\r\n            },\r\n            {\r\n                \"name\": \"ICAN\",\r\n                \"title\": \"chief\",\r\n                \"yearAdmitted\": \"2019\",\r\n                \"website\": \"https://google.com\"\r\n            }\r\n        ],\r\n        \"role\": \"Executive\",\r\n        \"firstName\": \"Martin\",\r\n        \"lastName\": \"Ade\",\r\n        \"otherNames\": \"Samuel\",\r\n        \"email\": \"martinade@boadmin.com\",\r\n        \"phoneNumber\": \"09071298374\",\r\n        \"dateOfBirth\": \"1999-01-11T22:39:55.2\",\r\n        \"gender\": \"male\",\r\n        \"nationality\": \"Nigerian\",\r\n        \"stateOfOrigin\": \"Osun\",\r\n        \"placeOfBirth\": \"Ilesha\",\r\n        \"religion\": \"Christian\",\r\n        \"occupation\": \"Developer\",\r\n        \"maritalStatus\": \"single\",\r\n       \"spouseName\": \"glory ade\",\r\n        \"spousePhoneNumber\": \"09023612322\",\r\n  \"spouseBirthday\": \"1999-01-11T22:39:55.200Z\",\r\n  \"currentAddress\": \"Abuja\",\r\n  \"marriageDate\": \"2019-01-11T22:39:55.200Z\",\r\n        \"hasFormerAddress\": true,\r\n        \"formerAddress\": \"Lagos\",\r\n        \"imageId\": \"1234\",\r\n        \"imageUrl\": \"test\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/Profile/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"Profile",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Profile (ID)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/Profile",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"Profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Profile (Update)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/profile/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"profile",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Appointment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"directorshipNature\": \"Chairman\",\r\n  \"appointmentStartDate\": \"2022-01-12T01:00:51.930Z\",\r\n  \"appointmentResumptionDate\": \"2022-04-12T01:00:51.930Z\",\r\n  \"isTenuredPosition\": true,\r\n  \"tenureEndDate\": \"2023-01-12T01:00:51.930Z\",\r\n  \"appointmentConsideration\": \"Angel Investor\",\r\n  \"appointmentInformation\": \"He has multiple startups\",\r\n  \"appointmentLetterDoc\": \"string\",\r\n  \"appointmentAdditionalDoc\": \"string\",\r\n  \"regulatoryApprovals\": [\r\n    {\r\n      \"regulator\": \"CBN\",\r\n      \"approvalStatus\": \"Approval Denied\"\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/appointment/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"appointment",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Appointment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								},
+								"description": "This is used to the the appointment details of a company person"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Appointment  (Update)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/appointment/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"appointment",
+										"Update"
+									]
+								},
+								"description": "This is used to update a person appointment details"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Designation",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"jobRole\": \"head of risk\",\r\n  \"department\": \"department of risk assessment\",\r\n  \"jobResponsibility\": \"responsible for business operations\",\r\n  \"appointmentDate\": \"2022-01-9T07:48:39.898Z\",\r\n  \"resumptionDate\": \"2022-01-12T07:48:39.898Z\",\r\n  \"officeLocation\": \"lagos\",\r\n  \"jobDescription\": \"coordinating business activities\",\r\n  \"employmentLetterDoc\": \"string\",\r\n  \"otherDesignationDoc\": \"string\",\r\n  \"directorReporting\": \"CEO\",\r\n  \"stakeHolderReporting\": \"Head, Global Marketing\",\r\n  \"strategicReporting\": \"Investment stragetgy committee\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/designation/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"designation",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Designation",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/designation",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"designation"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Designation (Update)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/designation/update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"designation",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Interest",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"hasCompanyInterest\": true,\r\n  \"hasOtherCompanyInterest\": true,\r\n  \"directShare\": 100000,\r\n  \"indirectShare\": 50000,\r\n  \"totalShare\": 150000,\r\n  \"pricePerShare\": 5.7,\r\n  \"shareAcquiryDate\": \"2021-01-12T07:55:59.562Z\",\r\n  \"percentageShare\": 5,\r\n  \"shareValue\": 2000000,\r\n  \"otherCompanyInterests\": [\r\n    {\r\n      \"companyName\": \"sunbeam ltd\",\r\n      \"companySector\": \"entertainment\",\r\n      \"natureOfInterest\": \"consultant\",\r\n      \"directShare\": 10000,\r\n      \"indirectShare\": 6000,\r\n      \"totalShare\": 16000,\r\n      \"pricePerShare\": 2,\r\n      \"dateAcquired\": \"2021-01-12T07:55:59.562Z\",\r\n      \"percentageShare\": 5,\r\n      \"shareValue\": 1000000\r\n    },\r\n     {\r\n      \"companyName\": \"palo alto ltd\",\r\n      \"companySector\": \"avaition\",\r\n      \"natureOfInterest\": \"directorship\",\r\n      \"directShare\": 12000,\r\n      \"indirectShare\": 8000,\r\n      \"totalShare\": 20000,\r\n      \"pricePerShare\": 1,\r\n       \"dateAcquired\": \"2021-01-12T07:55:59.562Z\",\r\n      \"percentageShare\": 3,\r\n      \"shareValue\": 100000\r\n    }\r\n  ],\r\n  \"declarations\": [\r\n    {\r\n      \"subject\": \"Company stake\",\r\n      \"details\": \"declaration of company assets\",\r\n      \"lastDeclarationDate\": \"2021-01-12T07:55:59.562Z\",\r\n      \"nextDeclarationDate\": \"2022-01-12T07:55:59.562Z\",\r\n      \"declarationDoc\": \"string\",\r\n      \"shouldNotifyUser\": true,\r\n      \"declaredTo\": \"board of directors, regulator\",\r\n      \"modeOfDeclaration\": \"Notification in writing, notification by other means    \",\r\n      \"reminderDays\": 2\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/interest/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"interest",
+										"Update"
+									]
+								},
+								"description": "This is used to add/update company person interests.\n\nNote: \nmode of declaration is a comma separated list in a string. (e.g  \"Notification in writing, notification by other means\")\n\ndeclared to is a comma separated list in a string. (e.g  \"board of directors, regulator\")"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Interest",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/Interest",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"Interest"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Interest (Update)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/interest/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"interest",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Exposure",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"politicalExposureStatus\": \"Politically Exposed\",\r\n  \"natureOfExposure\": \"Previously held a political office\",\r\n  \"politicalTitle\": \"Commissioner of Police\",\r\n  \"exposureDescription\": \"The Former commissioner of police\",\r\n  \"politicalStartDate\": \"2015-01-12T11:54:04.756Z\",\r\n  \"politicalEndDate\": \"2021-01-12T11:54:04.756Z\",\r\n  \"politicalResponsibility\": \"head of police infrastructure\",\r\n  \"exposureSituation\": \"position of importance to the country\",\r\n  \"assetDeclarationDoc\": \"string\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/Exposure/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"Exposure",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Exposure",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/exposure",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"exposure"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Exposure (Update)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/exposure/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"exposure",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Renumeration",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"grossAnnualRenumeration\": 1200000,\r\n  \"grossMonthlyRenumeration\": 100000,\r\n  \"netMonthlyRenumeration\": 80000,\r\n  \"otherRenumerationDetails\": \"HMO is covered\",\r\n  \"renumerationStartDate\": \"2021-01-12T12:14:52.861Z\",\r\n  \"renumerationEndDate\": \"2022-01-12T12:14:52.861Z\",\r\n  \"paymentFrequency\": \"monthly\",\r\n  \"bankAccountDetails\": [\r\n    {\r\n      \"bankName\": \"UBA\",\r\n      \"accountNumber\": \"2191354637\",\r\n      \"bvn\": \"2288476351\",\r\n      \"additionalInformation\": \"string\",\r\n      \"signatoryType\": \"Joint Signatory\",\r\n      \"accountType\": \"Savings\"\r\n    },\r\n     {\r\n      \"bankName\": \"Zenith\",\r\n      \"accountNumber\": \"2195854637\",\r\n      \"bvn\": \"2288476351\",\r\n      \"additionalInfo\": \"string\",\r\n      \"signatoryType\": \"Sole Signatory\",\r\n      \"accountType\": \"Savings\"\r\n    }\r\n    \r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/Renumeration/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"Renumeration",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Renumeration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/renumeration",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"renumeration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Renumeration (Update)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateCommittee",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n  \"placeHolder\": \"string\",\r\n  \"committeeIds\": [\r\n  \"1d74406e-f40d-4426-b75a-cbe4275fafbe\"\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/Committee/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"Committee",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Committee",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/committtee",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"committtee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Committee (Update)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateAttachments",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " [{\r\n    \"highlight\": \"string\",\r\n    \"source\": \"string\",\r\n    \"hasExpiryDate\": true,\r\n    \"referenceDate\": \"2022-06-03T07:57:58.590Z\",\r\n    \"validFrom\": \"2022-06-03T07:57:58.590Z\",\r\n    \"validTo\": \"2022-06-03T07:57:58.590Z\",\r\n    \"otherDetails\": \"string\",\r\n    \"identity\": {\r\n      \"fileId\": \"string\",\r\n      \"versionNumber\": 0,\r\n      \"fileName\": \"string\",\r\n      \"fileSize\": \"string\",\r\n      \"fileType\": \"string\"\r\n    },\r\n    \"documentStatus\": \"string\",\r\n    \"reference\": \"string\",\r\n    \"referenceDescription\": \"string\",\r\n    \"statusDescription\": \"string\"\r\n  }\r\n  \r\n ]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Root}}/CompanyPerson/de9e883f-88d5-4e1e-a7cd-6e6608830297/Attachments/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"CompanyPerson",
+										"de9e883f-88d5-4e1e-a7cd-6e6608830297",
+										"Attachments",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Consultant",
+					"item": [
+						{
+							"name": "Create consultant Profile",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Verify thet response is in json format\", function () {\r",
+											"    pm.response.to.be.json;\r",
+											"});    \r",
+											"pm.test(\"Response time is less than 5000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"name\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"consulting firm 1\");\r",
+											"});\r",
+											"pm.test(\"firstName\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Gideon\");\r",
+											"});\r",
+											"pm.test(\"lastName\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Peters\");\r",
+											"});\r",
+											"pm.test(\"position\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Secretary\");\r",
+											"});\r",
+											"pm.test(\"email\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"test@mailinator.com\");\r",
+											"});\r",
+											"pm.test(\"phoneNumber\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"09031722598\");\r",
+											"});\r",
+											"pm.test(\"id\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"businessLocations\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Ikorodu\",\"Isawo\",\"Lagos\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": null,\r\n    \"name\": \"consulting firm 1\",\r\n    \"engagementStartDate\": \"2021-01-01T00:00:00\",\r\n    \"engagementEndDate\": \"2022-01-01T00:00:00\",\r\n    \"engagementCommencementDate\": \"2023-01-01T00:00:00\",\r\n    \"consultingFee\": 50000.0,\r\n    \"otherConsultantFee\": 600000.0,\r\n    \"businessLocations\": [\"Ikorodu\",\"Isawo\",\"Lagos\"],\r\n    \"keyContacts\": [\r\n        {\r\n            \"firstName\": \"Gideon\",\r\n            \"lastName\": \"Peters\",\r\n            \"position\": \"Secretary\",\r\n            \"email\": \"test@mailinator.com\",\r\n            \"phoneNumber\": \"09031722598\"\r\n        },\r\n        {\r\n            \"firstName\": \"Adekunle\",\r\n            \"lastName\": \"folorunso\",\r\n            \"position\": \"Consulting lead\",\r\n            \"email\": \"test@mailinator.com\",\r\n            \"phoneNumber\": \"09031722598\"\r\n        }\r\n    ]\r\n}"
+								},
+								"url": {
+									"raw": "{{Root}}/Consultant/Profile/Create",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Consultant",
+										"Profile",
+										"Create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update consultant Profile",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Verify thet response is in json format\", function () {\r",
+											"    pm.response.to.be.json;\r",
+											"});    \r",
+											"pm.test(\"Response time is less than 5000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"name\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"consulting firm 1\");\r",
+											"});\r",
+											"pm.test(\"firstName\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Gideon\");\r",
+											"});\r",
+											"pm.test(\"lastName\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Peters\");\r",
+											"});\r",
+											"pm.test(\"position\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Secretary\");\r",
+											"});\r",
+											"pm.test(\"email\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"test@mailinator.com\");\r",
+											"});\r",
+											"pm.test(\"phoneNumber\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"09031722598\");\r",
+											"});\r",
+											"pm.test(\"id\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"businessLocations\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Ikorodu\",\"Isawo\",\"Lagos\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": null,\r\n    \"name\": \"consulting firm 1\",\r\n    \"engagementStartDate\": \"2021-01-01T00:00:00\",\r\n    \"engagementEndDate\": \"2022-01-01T00:00:00\",\r\n    \"engagementCommencementDate\": \"2023-01-01T00:00:00\",\r\n    \"consultingFee\": 550000.0,\r\n    \"otherConsultantFee\": 600000.0,\r\n    \"businessLocations\": [\"Ikorodu\",\"Isawo\",\"Lagos\"],\r\n    \"keyContacts\": [\r\n        {\r\n            \"firstName\": \"Gideon\",\r\n            \"lastName\": \"Peters\",\r\n            \"position\": \"Secretary\",\r\n            \"email\": \"test@mailinator.com\",\r\n            \"phoneNumber\": \"09031722598\"\r\n        },\r\n        {\r\n            \"firstName\": \"Adekunle\",\r\n            \"lastName\": \"folorunso\",\r\n            \"position\": \"Consulting lead\",\r\n            \"email\": \"test@mailinator.com\",\r\n            \"phoneNumber\": \"09031722598\"\r\n        }\r\n    ]\r\n}"
+								},
+								"url": {
+									"raw": "{{Root}}/Consultant/Profile/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Consultant",
+										"Profile",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultant List",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Verify thet response is in json format\", function () {\r",
+											"    pm.response.to.be.json;\r",
+											"});    \r",
+											"pm.test(\"Response time is less than 5000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"name\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"consulting firm 1\");\r",
+											"});\r",
+											"pm.test(\"email\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"fullName\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageUrl\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"entryStatus\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Draft\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Consultant/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Consultant",
+										"List"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Consultant List",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{Root}}/Consultant/List",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Consultant",
+												"List"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "190"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 29 Dec 2021 16:28:23 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"920f08ff-9098-45df-af8d-003a3620674e\",\n            \"name\": \"consulting firm 1\"\n        }\n    ],\n    \"pageSize\": 50,\n    \"pageNumber\": 1,\n    \"totalRecords\": 1,\n    \"isSuccessful\": true,\n    \"statusCode\": \"00\",\n    \"message\": \"Successful\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Contacts List Get",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Verify thet response is in json format\", function () {\r",
+											"    pm.response.to.be.json;\r",
+											"});    \r",
+											"pm.test(\"Response time is less than 5000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"role\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Director\");\r",
+											"});\r",
+											"pm.test(\"email\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"fullName\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageUrl\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageId\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"entryStatus\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Draft\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Consultant/Contact/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Consultant",
+										"Contact",
+										"List"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Consultant Contacts",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{Root}}/Consultant/Contact/List",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Consultant",
+												"Contact",
+												"List"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "354"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 29 Dec 2021 16:26:25 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"b87039b1-7c4d-458c-b02d-c4f3884987e7\",\n            \"fullName\": \"Adekunle folorunso\",\n            \"roles\": \"Consultant\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"d51bd0b4-ab4f-4772-bf61-220cc5a9a688\",\n            \"fullName\": \"Gideon Peters\",\n            \"roles\": \"Consultant\",\n            \"entryStatus\": \"Draft\"\n        }\n    ],\n    \"pageSize\": 50,\n    \"pageNumber\": 1,\n    \"totalRecords\": 1,\n    \"isSuccessful\": true,\n    \"statusCode\": \"00\",\n    \"message\": \"Successful\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Profile Update Get",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Verify thet response is in json format\", function () {\r",
+											"    pm.response.to.be.json;\r",
+											"});    \r",
+											"pm.test(\"Response time is less than 5000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"role\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Director\");\r",
+											"});\r",
+											"pm.test(\"email\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"fullName\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageUrl\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageId\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"entryStatus\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Draft\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Consultant/920f08ff-9098-45df-af8d-003a3620674e/Profile/Update/",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Consultant",
+										"920f08ff-9098-45df-af8d-003a3620674e",
+										"Profile",
+										"Update",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successful Response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{Root}}/Consultant/920f08ff-9098-45df-af8d-003a3620674e/Profile/Update",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Consultant",
+												"920f08ff-9098-45df-af8d-003a3620674e",
+												"Profile",
+												"Update"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "726"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 29 Dec 2021 16:28:35 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": {\n        \"id\": \"920f08ff-9098-45df-af8d-003a3620674e\",\n        \"name\": \"consulting firm 1\",\n        \"engagementStartDate\": \"2021-01-01T00:00:00\",\n        \"engagementEndDate\": \"2022-01-01T00:00:00\",\n        \"engagementCommencementDate\": \"2023-01-01T00:00:00\",\n        \"consultingFee\": 50000,\n        \"otherConsultantFee\": 600000,\n        \"businessLocations\": [\n            \"Isawo\",\n            \"Ikorodu\",\n            \"Lagos\"\n        ],\n        \"keyContacts\": [\n            {\n                \"id\": \"b87039b1-7c4d-458c-b02d-c4f3884987e7\",\n                \"firstName\": \"Adekunle\",\n                \"lastName\": \"folorunso\",\n                \"position\": null,\n                \"email\": \"test@mailinator.com\",\n                \"phoneNumber\": \"09031722598\"\n            },\n            {\n                \"id\": \"d51bd0b4-ab4f-4772-bf61-220cc5a9a688\",\n                \"firstName\": \"Gideon\",\n                \"lastName\": \"Peters\",\n                \"position\": null,\n                \"email\": \"test@mailinator.com\",\n                \"phoneNumber\": \"09031722598\"\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Profile Details Get",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Verify thet response is in json format\", function () {\r",
+											"    pm.response.to.be.json;\r",
+											"});    \r",
+											"pm.test(\"Response time is less than 5000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"role\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Director\");\r",
+											"});\r",
+											"pm.test(\"email\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"fullName\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageUrl\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageId\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"entryStatus\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Draft\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Consultant/920f08ff-9098-45df-af8d-003a3620674e/Profile",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Consultant",
+										"920f08ff-9098-45df-af8d-003a3620674e",
+										"Profile"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get Profile Details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{Root}}/Consultant/920f08ff-9098-45df-af8d-003a3620674e/Profile",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Consultant",
+												"920f08ff-9098-45df-af8d-003a3620674e",
+												"Profile"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "375"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 29 Dec 2021 16:30:06 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": {\n        \"id\": \"920f08ff-9098-45df-af8d-003a3620674e\",\n        \"name\": \"consulting firm 1\",\n        \"engagementStartDate\": \"2021-01-01T00:00:00\",\n        \"engagementEndDate\": \"2022-01-01T00:00:00\",\n        \"engagementCommencementDate\": \"2023-01-01T00:00:00\",\n        \"consultingFee\": 50000,\n        \"otherConsultantFee\": 600000,\n        \"businessLocations\": [],\n        \"keyContacts\": []\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Appointment Update",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Verify thet response is in json format\", function () {\r",
+											"    pm.response.to.be.json;\r",
+											"});    \r",
+											"pm.test(\"Response time is less than 5000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"role\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Director\");\r",
+											"});\r",
+											"pm.test(\"email\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"fullName\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageUrl\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageId\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"entryStatus\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Draft\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"consultantType1\",\r\n    \"title\": \"consultant title\",\r\n    \"appointmentStartDate\": \"2021-01-01T00:00:00\",\r\n    \"appointmentEndDate\": \"2022-01-01T00:00:00\",\r\n    \"reviewStartDate\": \"2023-01-01T00:00:00\",\r\n    \"reviewEndDate\": \"2024-01-01T00:00:00\",\r\n    \"engagementOutcome\": \"Consultant OutCome\",\r\n    \"otherInformation\": \"This is where other info stays\",\r\n    \"isTenured\": false,\r\n    \"modeOfDelivery\": [\"First\",\"Second\",\"Third\"],\r\n    \"modeOfDeliveryDescription\": \"This is the description\"\r\n}"
+								},
+								"url": {
+									"raw": "{{Root}}/Consultant/920f08ff-9098-45df-af8d-003a3620674e/Appointment/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Consultant",
+										"920f08ff-9098-45df-af8d-003a3620674e",
+										"Appointment",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Appointment Update Get",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Verify thet response is in json format\", function () {\r",
+											"    pm.response.to.be.json;\r",
+											"});    \r",
+											"pm.test(\"Response time is less than 5000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"role\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Director\");\r",
+											"});\r",
+											"pm.test(\"email\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"fullName\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageUrl\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageId\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"entryStatus\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Draft\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Consultant/920f08ff-9098-45df-af8d-003a3620674e/Appointment/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Consultant",
+										"920f08ff-9098-45df-af8d-003a3620674e",
+										"Appointment",
+										"Update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successful Response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{Root}}/Consultant/920f08ff-9098-45df-af8d-003a3620674e/Appointment",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Consultant",
+												"920f08ff-9098-45df-af8d-003a3620674e",
+												"Appointment"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "477"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 29 Dec 2021 16:39:07 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": {\n        \"type\": \"consultantType1\",\n        \"title\": \"consultant title\",\n        \"appointmentStartDate\": \"2021-01-01T00:00:00\",\n        \"appointmentEndDate\": \"2022-01-01T00:00:00\",\n        \"reviewStartDate\": \"2023-01-01T00:00:00\",\n        \"reviewEndDate\": \"2024-01-01T00:00:00\",\n        \"engagementOutcome\": \"Consultant OutCome\",\n        \"otherInformation\": \"This is where other info stays\",\n        \"isTenured\": false,\n        \"modeOfDelivery\": [\n            \"First\",\n            \"Second\",\n            \"Third\"\n        ],\n        \"modeOfDeliveryDescription\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Appointment Details Get",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Verify thet response is in json format\", function () {\r",
+											"    pm.response.to.be.json;\r",
+											"});    \r",
+											"pm.test(\"Response time is less than 5000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"role\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Director\");\r",
+											"});\r",
+											"pm.test(\"email\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"fullName\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageUrl\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"imageId\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"null\");\r",
+											"});\r",
+											"pm.test(\"entryStatus\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include(\"Draft\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Consultant/920f08ff-9098-45df-af8d-003a3620674e/Appointment",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Consultant",
+										"920f08ff-9098-45df-af8d-003a3620674e",
+										"Appointment"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successful Response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{Root}}/Consultant/920f08ff-9098-45df-af8d-003a3620674e/Appointment",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Consultant",
+												"920f08ff-9098-45df-af8d-003a3620674e",
+												"Appointment"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "477"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 29 Dec 2021 16:39:07 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": {\n        \"type\": \"consultantType1\",\n        \"title\": \"consultant title\",\n        \"appointmentStartDate\": \"2021-01-01T00:00:00\",\n        \"appointmentEndDate\": \"2022-01-01T00:00:00\",\n        \"reviewStartDate\": \"2023-01-01T00:00:00\",\n        \"reviewEndDate\": \"2024-01-01T00:00:00\",\n        \"engagementOutcome\": \"Consultant OutCome\",\n        \"otherInformation\": \"This is where other info stays\",\n        \"isTenured\": false,\n        \"modeOfDelivery\": [\n            \"First\",\n            \"Second\",\n            \"Third\"\n        ],\n        \"modeOfDeliveryDescription\": null\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Guest",
+					"item": []
+				},
+				{
+					"name": "Committee",
+					"item": [
+						{
+							"name": "Create Committee",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"committeeType\": \"Advisory Committee\",\r\n  \"name\": \"Development Committee\",\r\n  \"quorum\": 3,\r\n  \"mandateDoc\": \"string\",\r\n  \"authorityType\": \"committee\",\r\n  \"reportingAuthorityCommittees\": [\r\n    \"1d74406e-f40d-4426-b75a-cbe4275fafbe\"\r\n  ],\r\n  \"invitees\": [\r\n    \"d86118b1-0959-4911-87ba-48b1b70402ad\"\r\n  ],\r\n//   \"reportingAuthorityPeople\": [\r\n//     \"c6161525-45c7-4cd2-96bb-e8889ecd6f30\"\r\n//   ],\r\n  \"constitutions\": [\r\n    \"c29bd8e7-33c4-487d-bc02-796ca66d79d3\"\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Root}}/Committee/Create",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Committee",
+										"Create"
+									]
+								},
+								"description": "This is used to add a committee\n\nnote :The following are the possible values for the authority type\nAuthorityType: \n\"committtee\",\n\"person\""
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Committees",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Profile",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"committeeType\": \"Board Committee\",\r\n  \"name\": \"test committee\",\r\n  \"quorum\": 4,\r\n  \"mandateDoc\": \"string\",\r\n  \"authorityType\": \"committee\",\r\n  \"reportingAuthorityCommittees\": [\r\n    {\r\n      \"committeeId\": \"5bcf0f1f-490e-4a31-bac4-53631ef51f09\",\r\n      \"name\": \"Development Committee\"\r\n    }\r\n  ],\r\n  \"invitees\": [\r\n    \"d86118b1-0959-4911-87ba-48b1b70402ad\"\r\n  ],\r\n  \"reportingAuthorityPeople\": [\r\n    \"c6161525-45c7-4cd2-96bb-e8889ecd6f30\"\r\n  ],\r\n  \"constitutions\": [\r\n    \"c29bd8e7-33c4-487d-bc02-796ca66d79d3\"\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Root}}/Committee/1d74406e-f40d-4426-b75a-cbe4275fafbe/Profile/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Committee",
+										"1d74406e-f40d-4426-b75a-cbe4275fafbe",
+										"Profile",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Profile",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Profile (Update)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Corporate Engagement",
+			"item": [
+				{
+					"name": "Regulatory",
+					"item": [
+						{
+							"name": "Regulatory Engagement List Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Regulatory/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Regulatory",
+										"List"
+									]
+								},
+								"description": "This is used to fetch all regulatory engagements"
+							},
+							"response": [
+								{
+									"name": "Successful Response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{Root}}/Regulatory/List",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Regulatory",
+												"List"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "2801"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Dec 2021 16:07:00 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"0087869b-63a4-46bb-9b5b-ba304df8cacc\",\n            \"group\": \"Government Agency\",\n            \"name\": \"21212\",\n            \"createdBy\": null,\n            \"date\": \"2/12/0112 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"00d5dbc1-2142-496d-92c4-569334ec6300\",\n            \"group\": \"Government Agency\",\n            \"name\": \"dsad\",\n            \"createdBy\": null,\n            \"date\": \"2/1/0002 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"055340f8-d7e4-48c5-994f-2c87366c092d\",\n            \"group\": \"1\",\n            \"name\": \"das\",\n            \"createdBy\": null,\n            \"date\": \"12/16/2021 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"15d1672d-4c1a-4cfa-8131-f3d3789c0f2a\",\n            \"group\": \"Regulator\",\n            \"name\": \"dsad\",\n            \"createdBy\": null,\n            \"date\": \"12/16/2021 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"16f12da2-ae1f-4d48-bc84-d3361dfb098a\",\n            \"group\": \"Government Agency\",\n            \"name\": \"dsadas\",\n            \"createdBy\": null,\n            \"date\": \"12/9/2021 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"299e9d5c-0e30-4f34-9b90-ad5f6f7e05c6\",\n            \"group\": \"Government Agency\",\n            \"name\": \"dsad\",\n            \"createdBy\": null,\n            \"date\": \"2/1/0002 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"3580a0a1-d542-451d-91a4-cb945bd28bc8\",\n            \"group\": \"Government Agency\",\n            \"name\": \"dasdas\",\n            \"createdBy\": null,\n            \"date\": \"12/19/2021 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"47962885-b658-4904-809d-2e991b862375\",\n            \"group\": \"Government Agency\",\n            \"name\": \"bbbjhb\",\n            \"createdBy\": null,\n            \"date\": \"12/16/2021 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"5674f665-cf13-43a3-8968-9e600e0c50aa\",\n            \"group\": \"Government Agency\",\n            \"name\": \"dsasad\",\n            \"createdBy\": null,\n            \"date\": \"1/2/0020 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"75d9e386-76bb-4582-b437-35d86c884333\",\n            \"group\": \"Government Agency\",\n            \"name\": \"adsdsa\",\n            \"createdBy\": null,\n            \"date\": \"2/22/0002 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"887086b5-ab04-4bde-a30b-d365c0e39814\",\n            \"group\": \"Internal Correspondence\",\n            \"name\": \"11\",\n            \"createdBy\": null,\n            \"date\": \"11/11/0011 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"d3a8081b-75e5-4497-8138-03410036c2ac\",\n            \"group\": \"Government Agency\",\n            \"name\": \"sdasdas\",\n            \"createdBy\": null,\n            \"date\": \"12/20/2021 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"d6210096-15d7-4bd5-89a8-0cd92d8d9188\",\n            \"group\": \"Regulator\",\n            \"name\": \"Test Correspondence\",\n            \"createdBy\": null,\n            \"date\": \"2/1/2020 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"e92ef999-2678-4d44-9321-4013fb75e28f\",\n            \"group\": \"Government Agency\",\n            \"name\": \"dsasad\",\n            \"createdBy\": null,\n            \"date\": \"1/2/0020 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"ef0ece51-3d11-4031-8379-8a41e88be4a1\",\n            \"group\": \"Government Agency\",\n            \"name\": \"asdasd\",\n            \"createdBy\": null,\n            \"date\": \"12/16/2021 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"efbcd242-8630-4577-9c43-e4ff34082e0a\",\n            \"group\": \"Government Agency\",\n            \"name\": \"sdsa\",\n            \"createdBy\": null,\n            \"date\": \"2/12/0022 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"fe9171ce-10a9-492e-a280-e345a2a25974\",\n            \"group\": \"string\",\n            \"name\": \"string\",\n            \"createdBy\": null,\n            \"date\": \"12/24/2021 9:03:13 AM\",\n            \"entryStatus\": \"Draft\"\n        }\n    ],\n    \"pageSize\": 50,\n    \"pageNumber\": 1,\n    \"totalRecords\": 17,\n    \"isSuccessful\": true,\n    \"statusCode\": \"00\",\n    \"message\": \"Successful\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Regulatory Engagement Highlights Get(ID)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business",
+					"item": []
+				},
+				{
+					"name": "Others",
+					"item": []
+				},
+				{
+					"name": "Business Engagement List Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Root}}/Business/List",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Business",
+								"List"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Business/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Business",
+										"List"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "1078"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 16:07:56 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"01ad8211-2b80-4f86-bd93-add4e8ab321a\",\n            \"group\": \"Government Agency\",\n            \"name\": \"ewefas\",\n            \"createdBy\": null,\n            \"date\": \"11/11/0011 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"17bf1d0a-9e98-4cc1-9d9e-080c9a91a9e4\",\n            \"group\": \"Government Agency\",\n            \"name\": \"jbhb\",\n            \"createdBy\": null,\n            \"date\": \"4/4/0044 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"1f14242d-ce23-4810-93bb-13d890b85de8\",\n            \"group\": \"Government Agency\",\n            \"name\": \"dasdsad\",\n            \"createdBy\": null,\n            \"date\": \"12/17/2021 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"42438c73-3b64-4be2-8e40-9bdb3209e728\",\n            \"group\": \"Government Agency\",\n            \"name\": \"kjnkjnk\",\n            \"createdBy\": null,\n            \"date\": \"12/17/2021 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"b97e0c9a-6d95-4f42-a406-d9aed3e8ae5e\",\n            \"group\": \"Government Agency\",\n            \"name\": \"sdasd\",\n            \"createdBy\": null,\n            \"date\": \"12/17/2021 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        },\n        {\n            \"id\": \"e2e66071-f573-448c-8479-0a7377b38eb5\",\n            \"group\": \"Government Agency\",\n            \"name\": \"ygguyg\",\n            \"createdBy\": null,\n            \"date\": \"4/4/0444 12:00:00 AM\",\n            \"entryStatus\": \"Draft\"\n        }\n    ],\n    \"pageSize\": 50,\n    \"pageNumber\": 1,\n    \"totalRecords\": 6,\n    \"isSuccessful\": true,\n    \"statusCode\": \"00\",\n    \"message\": \"Successful\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Business Engagement Highlights Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"priority\": \"Priority 1\",\r\n        \"actionRequired\": \"Action 1\",\r\n        \"actionTaken\": \"Taken 1\",\r\n        \"engagements\": \"Engagements 1\"\r\n    },\r\n    {\r\n        \"priority\": \"Priority 2\",\r\n        \"actionRequired\": \"Action 2\",\r\n        \"actionTaken\": \"Taken 2\",\r\n        \"engagements\": \"Engagements 2\"\r\n    },\r\n    {\r\n        \"priority\": \"Priority 3\",\r\n        \"actionRequired\": \"Action 3\",\r\n        \"actionTaken\": \"Taken 3\",\r\n        \"engagements\": \"Engagements 3\"\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/Business/01ad8211-2b80-4f86-bd93-add4e8ab321a/Highlights/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Business",
+								"01ad8211-2b80-4f86-bd93-add4e8ab321a",
+								"Highlights",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Business Engagement Highlights Update Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"priority\": \"Priority 1\",\r\n        \"actionRequired\": \"Action 1\",\r\n        \"actionTaken\": \"Taken 1\",\r\n        \"engagements\": \"Engagements 1\"\r\n    },\r\n    {\r\n        \"priority\": \"Priority 2\",\r\n        \"actionRequired\": \"Action 2\",\r\n        \"actionTaken\": \"Taken 2\",\r\n        \"engagements\": \"Engagements 2\"\r\n    },\r\n    {\r\n        \"priority\": \"Priority 3\",\r\n        \"actionRequired\": \"Action 3\",\r\n        \"actionTaken\": \"Taken 3\",\r\n        \"engagements\": \"Engagements 3\"\r\n    }\r\n]"
+						},
+						"url": {
+							"raw": "{{Root}}/Business/01ad8211-2b80-4f86-bd93-add4e8ab321a/Highlights/Update",
+							"host": [
+								"{{Root}}"
+							],
+							"path": [
+								"Business",
+								"01ad8211-2b80-4f86-bd93-add4e8ab321a",
+								"Highlights",
+								"Update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Other Engagement List Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Others/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Others",
+										"List"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "273"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 16:06:12 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"78a8e0da-8011-45ba-aad9-0f12957bf409\",\n            \"group\": \"Test group\",\n            \"name\": \"Test Name\",\n            \"createdBy\": null,\n            \"date\": \"12/24/2021 9:41:34 AM\",\n            \"entryStatus\": \"Draft\"\n        }\n    ],\n    \"pageSize\": 50,\n    \"pageNumber\": 1,\n    \"totalRecords\": 1,\n    \"isSuccessful\": true,\n    \"statusCode\": \"00\",\n    \"message\": \"Successful\"\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Corporate Correspondence",
+			"item": [
+				{
+					"name": "Correspondence",
+					"item": [
+						{
+							"name": "Correspondence Profile Create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"type\": \"Business\",\r\n  \"date\": \"2022-02-12T09:28:36.747Z\",\r\n  \"name\": \"Sun Beam Organization\",\r\n  \"description\": \"FinTech company bridging the transaction gap\",\r\n  \"email\": \"sunbeam@gmail.com\",\r\n  \"phoneNumber\": \"080123456789\",\r\n  \"address\": \"Ibeju Lekki, Nigeria\"\r\n}"
+								},
+								"url": {
+									"raw": "{{Root}}/Correspondence/Profile/Create",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"Profile",
+										"Create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Correspondence List Get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Root}}/Correspondence/List",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"List"
+									],
+									"query": [
+										{
+											"key": "PageNumber",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "PageSize",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successful Response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{Root}}/Correspondence/List",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Correspondence",
+												"List"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1435"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Dec 2021 11:14:17 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"f79ef96b-0d3c-4512-95df-caba7cfd5019\",\n            \"type\": \"Business\",\n            \"name\": \"Sun Beam Organization\",\n            \"createdBy\": null,\n            \"date\": \"12/02/2022 9:28:36\",\n            \"entryStatus\": \"Draft\"\n        }\n    ],\n    \"pageSize\": 50,\n    \"pageNumber\": 1,\n    \"totalRecords\": 1,\n    \"isSuccessful\": true,\n    \"statusCode\": \"00\",\n    \"message\": \"Successful\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Correspondence Profile Update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"type\": \"Business\",\r\n  \"date\": \"2022-02-12T09:28:36.747Z\",\r\n  \"name\": \"Sun Beam Technology Limited\",\r\n  \"description\": \"FinTech company bridging the transaction gap\",\r\n  \"email\": \"hello@sunbeam.com\",\r\n  \"phoneNumber\": \"080123456789\",\r\n  \"address\": \"Ibeju Lekki, Nigeria\"\r\n}"
+								},
+								"url": {
+									"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/Profile/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+										"Profile",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Correspondence Profile Details Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/Profile",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+										"Profile"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successful Reponses",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/Profile",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Correspondence",
+												"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+												"Profile"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "246"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Dec 2021 14:41:31 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": {\n        \"id\": \"f79ef96b-0d3c-4512-95df-caba7cfd5019\",\n        \"type\": \"Business\",\n        \"date\": \"2022-02-12T09:28:36.747\",\n        \"name\": \"Sun Beam Technology Limited\",\n        \"description\": \"FinTech company bridging the transaction gap\",\n        \"email\": \"hello@sunbeam.com\",\n        \"phoneNumber\": \"080123456789\",\n        \"address\": \"Ibeju Lekki, Nigeria\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Correspondence Profile Update Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/Profile/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+										"Profile",
+										"Update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successful Response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/Profile/Update",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Correspondence",
+												"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+												"Profile",
+												"Update"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1218"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Dec 2021 14:39:01 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": {\n        \"id\": \"f79ef96b-0d3c-4512-95df-caba7cfd5019\",\n        \"type\": \"Business\",\n        \"date\": \"2022-02-12T09:28:36.747\",\n        \"name\": \"Sun Beam Technology Limited\",\n        \"description\": \"FinTech company bridging the transaction gap\",\n        \"email\": \"hello@sunbeam.com\",\n        \"phoneNumber\": \"080123456789\",\n        \"address\": \"Ibeju Lekki, Nigeria\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Correspondence StakeHolders Update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"externalStakeHolders\": [\r\n    {\r\n      \"fullName\": \"Adams Peters\",\r\n      \"email\": \"adambspeters@gmail.com\",\r\n      \"phoneNumber\": \"08012345678\",\r\n      \"department\": \"Technology\",\r\n      \"information\": \"Head of Sun Beam Technology\",\r\n      \"correspondenceId\": \"f79ef96b-0d3c-4512-95df-caba7cfd5019\"\r\n    },\r\n    {\r\n      \"fullName\": \"Jane Doe\",\r\n      \"email\": \"JaneDoe@gmail.com\",\r\n      \"phoneNumber\": \"08012345678\",\r\n      \"department\": \"Marketing\",\r\n      \"information\": \"Head of Sun Beam Marketing\",\r\n      \"correspondenceId\": \"f79ef96b-0d3c-4512-95df-caba7cfd5019\"\r\n    }\r\n  ],\r\n  \"primaryStakeHolders\": [\r\n   \"d86118b1-0959-4911-87ba-48b1b70402ad\"\r\n  ],\r\n  \"otherStakeHolders\": [\r\n    \"359f6374-1a12-4717-8c7d-e0f3add0faef\"\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/StakeHolders/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+										"StakeHolders",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Correspondence StakeHoldes Details Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/StakeHolders",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+										"StakeHolders"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successful Reponses",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/StakeHolders",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Correspondence",
+												"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+												"StakeHolders"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "246"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Dec 2021 14:41:31 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": {\n        \"primaryStakeHolders\": [\n            {\n                \"id\": \"d86118b1-0959-4911-87ba-48b1b70402ad\",\n                \"fullName\": \"Peters Gideon\",\n                \"email\": \"gideonpeters85@gmail.com\",\n                \"imageUrl\": null,\n                \"imageId\": null,\n                \"committeeCount\": 0,\n                \"role\": \"Director\",\n                \"entryStatus\": \"Draft\"\n            }\n        ],\n        \"otherStakeHolders\": [\n            {\n                \"id\": \"359f6374-1a12-4717-8c7d-e0f3add0faef\",\n                \"fullName\": \"string string\",\n                \"email\": \"string\",\n                \"imageUrl\": null,\n                \"imageId\": \"string\",\n                \"committeeCount\": 0,\n                \"role\": \"Director\",\n                \"entryStatus\": \"Approved\"\n            }\n        ],\n        \"externalStakeHolders\": [\n            {\n                \"fullName\": \"Adams Peters\",\n                \"email\": \"adambspeters@gmail.com\",\n                \"phoneNumber\": \"08012345678\",\n                \"department\": \"Technology\",\n                \"information\": \"Head of Sun Beam Technology\",\n                \"correspondenceId\": \"f79ef96b-0d3c-4512-95df-caba7cfd5019\"\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Correspondence StakeHolders Update Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/StakeHolders/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+										"StakeHolders",
+										"Update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successful Response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/StakeHolders/Update",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Correspondence",
+												"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+												"StakeHolders",
+												"Update"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1218"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Dec 2021 14:39:01 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": {\n        \"primaryStakeHolders\": [\n            \"d86118b1-0959-4911-87ba-48b1b70402ad\"\n        ],\n        \"otherStakeHolders\": [\n            \"359f6374-1a12-4717-8c7d-e0f3add0faef\"\n        ],\n        \"externalStakeHolders\": [\n            {\n                \"fullName\": \"Adams Peters\",\n                \"email\": \"adambspeters@gmail.com\",\n                \"phoneNumber\": \"08012345678\",\n                \"department\": \"Technology\",\n                \"information\": \"Head of Sun Beam Technology\",\n                \"correspondenceId\": \"f79ef96b-0d3c-4512-95df-caba7cfd5019\"\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Correspondence Parties Update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n  {\r\n    \"subject\": \"Business Correspondence\",\r\n    \"date\": \"2022-02-11T07:52:26.398Z\",\r\n    \"priority\": \"Meduim\",\r\n    \"details\": \"string\",\r\n    \"actionRequired\": \"Sign Contract\",\r\n    \"actionTaken\": \"None\",\r\n    \"engagements\": \"string\"\r\n  }\r\n]"
+								},
+								"url": {
+									"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/Parties/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+										"Parties",
+										"Update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Correspondence Parties Details Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/Parties",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+										"Parties"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successful Reponses",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/Parties",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Correspondence",
+												"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+												"Parties"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "246"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Dec 2021 14:41:31 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": [\n        {\n            \"subject\": \"Business Correspondence\",\n            \"date\": \"2022-02-11T07:52:26.398\",\n            \"priority\": \"Meduim\",\n            \"details\": \"string\",\n            \"actionRequired\": \"Sign Contract\",\n            \"actionTaken\": \"None\",\n            \"engagements\": \"string\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Correspondence Parties Update Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/Parties/Update",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+										"Parties",
+										"Update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Successful Response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/Parties/Update",
+											"host": [
+												"{{Root}}"
+											],
+											"path": [
+												"Correspondence",
+												"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+												"Parties",
+												"Update"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1218"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/10.0"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Dec 2021 14:39:01 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"statusCode\": \"00\",\n    \"isSuccessful\": true,\n    \"message\": \"Successful\",\n    \"data\": [\n        {\n            \"subject\": \"Business Correspondence\",\n            \"date\": \"2022-02-11T07:52:26.398\",\n            \"priority\": \"Meduim\",\n            \"details\": \"string\",\n            \"actionRequired\": \"Sign Contract\",\n            \"actionTaken\": \"None\",\n            \"engagements\": \"string\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Correspondence Submit",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Root}}/Correspondence/f79ef96b-0d3c-4512-95df-caba7cfd5019/Submit",
+									"host": [
+										"{{Root}}"
+									],
+									"path": [
+										"Correspondence",
+										"f79ef96b-0d3c-4512-95df-caba7cfd5019",
+										"Submit"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
